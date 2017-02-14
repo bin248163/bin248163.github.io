@@ -178,34 +178,10 @@
         <p>刚开始尝试使用github，创建新项目的时候其中的README.md文件都是默认的，即使改动也只会添加文本，翻看别人的项目时发现其中的README.md不仅有文字还有链接、图片之类的，搜索之后发现github上的README.md文件是使用的Markdown语言编写，下面整理些Markdown语言的常用语法。</p>
 <h3 id="语法宗旨"><a href="#语法宗旨" class="headerlink" title="语法宗旨"></a>语法宗旨</h3><p>Markdown 的目标是实现「易读易写」。</p>
 <p>可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括Setext、atx、Textil、reStructuredText、Grutatex 和EtText，而最大灵感来源其实是纯文本电子邮件的格式。</p>
-<p>总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像<em>强调</em>。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。</p>
-<h3 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h3><p>主流编辑器都可以编辑Markdowm文件</p>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>1.标题</p>
-<p>标题使用“#”来标识h1~h6：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># h1</div><div class="line">## h2</div><div class="line">### h3</div><div class="line">#### h4</div><div class="line">##### h5</div><div class="line">###### h6</div></pre></td></tr></table></figure></p>
-<p>2.图片</p>
-<p>图片的格式如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![替代文字](https://raw.githubusercontent.com/bin248163/qd/master/images/home.jpg)</div></pre></td></tr></table></figure></p>
-<p>方括号里面放上图片的替代文字，圆括号里面放上图片的网址，图片引用最好为项目地址，外部图片地址会有显示不全的现象。</p>
-<p>3.链接</p>
-<p>外部链接的格式如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[My blog](http://blog.qianxiaoduan.com/)</div></pre></td></tr></table></figure>
-<p>方括号里面放上链接文字，圆括号里面放上链接的地址。</p>
-<p>相对路径的格式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">My blog [About](/index.php)</div></pre></td></tr></table></figure></p>
-<p>4.列表</p>
-<p>Markdown 支持有序列表和无序列表。</p>
-<p>无序列表使用星号、加号或是减号作为列表标记：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">*   Red</div><div class="line">*   Green</div><div class="line">*   Blue</div></pre></td></tr></table></figure></p>
-<p>等同于<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">+   Red</div><div class="line">+   Green</div><div class="line">+   Blue</div></pre></td></tr></table></figure></p>
-<p>和<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">-   Red</div><div class="line">-   Green</div><div class="line">-   Blue</div></pre></td></tr></table></figure></p>
-<p>有序列表则使用数字接着一个英文句点：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1.   Red</div><div class="line">2.   Green</div><div class="line">3.   Blue</div></pre></td></tr></table></figure></p>
-<p>5.分割线</p>
-<p>在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。可以在星号或是减号中间插入任意数量的空格。下面每种写法都可以建立分隔线：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">* * *</div><div class="line">***</div><div class="line">*****</div><div class="line">- - -</div><div class="line">---------</div></pre></td></tr></table></figure></p>
-<p>6.引用</p>
-<p>Markdown 通过“&gt;”来引用内容，可以在引用开头加一个，也可以在引用每一行的前面都加一个，引用也可以嵌套，示例如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; 这是一段引用</div><div class="line">&gt; &gt; 这是一段二级引用</div></pre></td></tr></table></figure></p>
-<p>7.换行</p>
-<p>一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进，这样会被认为是换行。</p>
-<p>8.代码</p>
-<p>如果要标记一小段行内代码，可以用反引号把它包起来（`），示例如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">github中`README.md`文件的编写</div></pre></td></tr></table></figure></p>
-<p>常用的应该就这些了~~~</p>
-
+<p>总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像<em>强调</em>。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。<br></p>
+        
+          <a class="article-more-a" href="/2017/02/14/markdown/#more">more >></a>
+        
       
 
       
