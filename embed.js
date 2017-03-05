@@ -2,7 +2,7 @@
 function sskadmin(e) {
  var ssk = '';
  if(e.user_id==6323651969655243522){
- ssk = '<div style="position: absolute;margin-left:300px;"><img src="【改为你自己的图片地址】" width="【图片宽度】" height="【图片高度】"></div>'
+ ssk = '<div style="position: absolute;margin-left:300px;"><img src="/1.png" width="50" height="50"></div>'
  }
  return ssk;
 }
