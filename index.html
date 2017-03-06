@@ -197,7 +197,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="搭建vue环境前需要安装node与git"><a href="#搭建vue环境前需要安装node与git" class="headerlink" title="搭建vue环境前需要安装node与git"></a>搭建vue环境前需要安装node与git</h3><p>node: <a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a><br>git: <a href="https://git-for-windows.github.io/">https://git-for-windows.github.io/</a></p>
-<h3 id="打开git-bash全局安装vue-cli"><a href="#打开git-bash全局安装vue-cli" class="headerlink" title="打开git bash全局安装vue-cli"></a>打开<code>git bash</code>全局安装vue-cli</h3><p>这里我们将 npm的注册表源设置为淘宝镜像来提升安装速度<br></p>
+<h3 id="打开git-bash全局安装vue-cli"><a href="#打开git-bash全局安装vue-cli" class="headerlink" title="打开git bash全局安装vue-cli"></a>打开<code>git bash</code>全局安装vue-cli</h3><p>这里我们将 npm的注册表源设置为淘宝镜像来提升安装速度</p>
         
           <a class="article-more-a" href="/2017/03/04/vue/#more">more >></a>
         
@@ -263,7 +263,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <p>之前我们把hexo托管在github，但是毕竟github是国外的，访问速度得不到保证，还有一点因为百度联盟广告脚本被插入攻击github导致github禁止百度爬虫，所以百度的收录也有问题，因此在国内的托管平台部署一份也很重要，权衡之下决定部署到coding。</p>
-<h3 id="coding注册-创建项目"><a href="#coding注册-创建项目" class="headerlink" title="coding注册 创建项目"></a>coding注册 创建项目</h3><p>在coding上注册账号并创建项目,项目名称需要与账户名称一致,否则可能因为路径错误使一些资源如样式等加载失败。<br></p>
+<h3 id="coding注册-创建项目"><a href="#coding注册-创建项目" class="headerlink" title="coding注册 创建项目"></a>coding注册 创建项目</h3><p>在coding上注册账号并创建项目,项目名称需要与账户名称一致,否则可能因为路径错误使一些资源如样式等加载失败。</p>
         
           <a class="article-more-a" href="/2017/02/17/coding/#more">more >></a>
         
@@ -331,7 +331,7 @@ var _hmt = _hmt || [];
         <p>页面loading动画能够更好的反应当前网页的加载进度情况，动画的形式从开始0%到100%完成网页加载这一过程可以给用户一个温馨的提示，用户体验很不错。</p>
 <p>loading动画的制作非常容易，难点在于如何判断当前页面的加载进度，目前没有方法可以直接获取正在加载对象的大小。所以我们无法通过数据大小来实现0-100%的加载显示过程。</p>
 <p>我们知道当页面加载时html代码是逐行进行加载的，因此我们可以通过这个特性来间接达到效果。</p>
-<p>首先我们需要定义一个页面的加载动画：<br></p>
+<p>首先我们需要定义一个页面的加载动画：</p>
         
           <a class="article-more-a" href="/2017/02/15/loading/#more">more >></a>
         
@@ -796,7 +796,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>JQuery的写法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(&apos;.videoA&apos;).click(function() &#123;</div><div class="line">       var spUrl = $(this).attr(&quot;href&quot;);</div><div class="line">       $(&apos;.video object&apos;).attr(&quot;date&quot;,spUrl);</div><div class="line">       $(&apos;.video-w&apos;).show();</div><div class="line">       return false;        </div><div class="line">   &#125;);</div></pre></td></tr></table></figure></p>
+        <p>JQuery的写法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'.videoA'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">       <span class="keyword">var</span> spUrl = $(<span class="keyword">this</span>).attr(<span class="string">"href"</span>);</div><div class="line">       $(<span class="string">'.video object'</span>).attr(<span class="string">"date"</span>,spUrl);</div><div class="line">       $(<span class="string">'.video-w'</span>).show();</div><div class="line">       <span class="keyword">return</span> <span class="literal">false</span>;        </div><div class="line">   &#125;);</div></pre></td></tr></table></figure></p>
         
           <a class="article-more-a" href="/2017/02/15/attr/#more">more >></a>
         

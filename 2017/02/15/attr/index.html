@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://blog.qianxiaoduan.com">
   <title>JQuery在IE下 attr 对src取值的问题 | 前小端-前端开发</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JQuery的写法123456$(&amp;apos;.videoA&amp;apos;).click(function() &amp;#123;       var spUrl = $(this).attr(&amp;quot;href&amp;quot;);       $(&amp;apos;.video object&amp;apos;).attr(&amp;quot;date&amp;quot;,spUrl);       $(&amp;apos;.video-w&amp;">
+  <meta name="description" content="JQuery的写法123456$(&apos;.videoA&apos;).click(function() &amp;#123;       var spUrl = $(this).attr(&quot;href&quot;);       $(&apos;.video object&apos;).attr(&quot;date&quot;,spUrl);       $(&apos;.video-w&apos;).show();       return false;           &amp;#125">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JQuery在IE下 attr 对src取值的问题">
 <meta property="og:url" content="http://blog.qianxiaoduan.com/2017/02/15/attr/index.html">
 <meta property="og:site_name" content="前小端-前端开发">
-<meta property="og:description" content="JQuery的写法123456$(&amp;apos;.videoA&amp;apos;).click(function() &amp;#123;       var spUrl = $(this).attr(&amp;quot;href&amp;quot;);       $(&amp;apos;.video object&amp;apos;).attr(&amp;quot;date&amp;quot;,spUrl);       $(&amp;apos;.video-w&amp;">
-<meta property="og:updated_time" content="2017-02-15T03:21:06.918Z">
+<meta property="og:description" content="JQuery的写法123456$(&apos;.videoA&apos;).click(function() &amp;#123;       var spUrl = $(this).attr(&quot;href&quot;);       $(&apos;.video object&apos;).attr(&quot;date&quot;,spUrl);       $(&apos;.video-w&apos;).show();       return false;           &amp;#125">
+<meta property="og:updated_time" content="2017-03-06T08:40:56.276Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JQuery在IE下 attr 对src取值的问题">
-<meta name="twitter:description" content="JQuery的写法123456$(&amp;apos;.videoA&amp;apos;).click(function() &amp;#123;       var spUrl = $(this).attr(&amp;quot;href&amp;quot;);       $(&amp;apos;.video object&amp;apos;).attr(&amp;quot;date&amp;quot;,spUrl);       $(&amp;apos;.video-w&amp;">
+<meta name="twitter:description" content="JQuery的写法123456$(&apos;.videoA&apos;).click(function() &amp;#123;       var spUrl = $(this).attr(&quot;href&quot;);       $(&apos;.video object&apos;).attr(&quot;date&quot;,spUrl);       $(&apos;.video-w&apos;).show();       return false;           &amp;#125">
   
     <link rel="alternative" href="/atom.xml" title="前小端-前端开发" type="application/atom+xml">
   
@@ -198,9 +198,9 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>JQuery的写法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(&apos;.videoA&apos;).click(function() &#123;</div><div class="line">       var spUrl = $(this).attr(&quot;href&quot;);</div><div class="line">       $(&apos;.video object&apos;).attr(&quot;date&quot;,spUrl);</div><div class="line">       $(&apos;.video-w&apos;).show();</div><div class="line">       return false;        </div><div class="line">   &#125;);</div></pre></td></tr></table></figure></p>
+        <p>JQuery的写法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'.videoA'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">       <span class="keyword">var</span> spUrl = $(<span class="keyword">this</span>).attr(<span class="string">"href"</span>);</div><div class="line">       $(<span class="string">'.video object'</span>).attr(<span class="string">"date"</span>,spUrl);</div><div class="line">       $(<span class="string">'.video-w'</span>).show();</div><div class="line">       <span class="keyword">return</span> <span class="literal">false</span>;        </div><div class="line">   &#125;);</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<p>需兼容IE则可以不用attr，而使用.html替换整个div内部的内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(&apos;.videoA&apos;).click(function() &#123;</div><div class="line">       var spUrl = $(this).attr(&quot;href&quot;);</div><div class="line">       var object_str=&apos;&lt;object data=&quot;&apos;+spUrl+&apos;&quot; style=&quot;width: 100%;height: 100%;display: block;&quot; /&gt;&apos;;</div><div class="line">       $(&apos;.video&apos;).html(object_str);</div><div class="line">       $(&apos;.video-w&apos;).show();</div><div class="line">       return false;</div><div class="line">   &#125;);</div></pre></td></tr></table></figure></p>
+<p>需兼容IE则可以不用attr，而使用.html替换整个div内部的内容<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'.videoA'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">       <span class="keyword">var</span> spUrl = $(<span class="keyword">this</span>).attr(<span class="string">"href"</span>);</div><div class="line">       <span class="keyword">var</span> object_str=<span class="string">'&lt;object data="'</span>+spUrl+<span class="string">'" style="width: 100%;height: 100%;display: block;" /&gt;'</span>;</div><div class="line">       $(<span class="string">'.video'</span>).html(object_str);</div><div class="line">       $(<span class="string">'.video-w'</span>).show();</div><div class="line">       <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">   &#125;);</div></pre></td></tr></table></figure></p>
 
       
 

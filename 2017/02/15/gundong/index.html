@@ -10,20 +10,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="这篇教程将介绍如何在页面滚动时触发CSS3动画，这种效果使用JQuery和CSS就能做到。
 实现原理为在页面加载时通过js给元素添加一个样式，当页面滚动到该元素位置时添加另外一个样式从而实现动画效果（此方法不兼容IE10以下浏览器）。
-HTML首先写好HTML标签，给需要滚动时触发的元素添加ID。1&amp;lt;div class=&amp;quot;w-1000 pc-30&amp;quot; id=&amp;quot;js">
+HTML首先写好HTML标签，给需要滚动时触发的元素添加ID。1&amp;lt;div class=&quot;w-1000 pc-30&quot; id=&quot;jsn&quot;&amp;gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="页面滚动触发CSS3动画的简单实现">
 <meta property="og:url" content="http://blog.qianxiaoduan.com/2017/02/15/gundong/index.html">
 <meta property="og:site_name" content="前小端-前端开发">
 <meta property="og:description" content="这篇教程将介绍如何在页面滚动时触发CSS3动画，这种效果使用JQuery和CSS就能做到。
 实现原理为在页面加载时通过js给元素添加一个样式，当页面滚动到该元素位置时添加另外一个样式从而实现动画效果（此方法不兼容IE10以下浏览器）。
-HTML首先写好HTML标签，给需要滚动时触发的元素添加ID。1&amp;lt;div class=&amp;quot;w-1000 pc-30&amp;quot; id=&amp;quot;js">
-<meta property="og:updated_time" content="2017-02-15T03:09:15.357Z">
+HTML首先写好HTML标签，给需要滚动时触发的元素添加ID。1&amp;lt;div class=&quot;w-1000 pc-30&quot; id=&quot;jsn&quot;&amp;gt;">
+<meta property="og:updated_time" content="2017-03-06T08:44:13.568Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="页面滚动触发CSS3动画的简单实现">
 <meta name="twitter:description" content="这篇教程将介绍如何在页面滚动时触发CSS3动画，这种效果使用JQuery和CSS就能做到。
 实现原理为在页面加载时通过js给元素添加一个样式，当页面滚动到该元素位置时添加另外一个样式从而实现动画效果（此方法不兼容IE10以下浏览器）。
-HTML首先写好HTML标签，给需要滚动时触发的元素添加ID。1&amp;lt;div class=&amp;quot;w-1000 pc-30&amp;quot; id=&amp;quot;js">
+HTML首先写好HTML标签，给需要滚动时触发的元素添加ID。1&amp;lt;div class=&quot;w-1000 pc-30&quot; id=&quot;jsn&quot;&amp;gt;">
   
     <link rel="alternative" href="/atom.xml" title="前小端-前端开发" type="application/atom+xml">
   
@@ -206,11 +206,11 @@ var _hmt = _hmt || [];
       
         <p>这篇教程将介绍如何在页面滚动时触发CSS3动画，这种效果使用JQuery和CSS就能做到。</p>
 <p>实现原理为在页面加载时通过js给元素添加一个样式，当页面滚动到该元素位置时添加另外一个样式从而实现动画效果（此方法不兼容IE10以下浏览器）。</p>
-<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p>首先写好HTML标签，给需要滚动时触发的元素添加ID。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;w-1000 pc-30&quot; id=&quot;jsn&quot;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p>首先写好HTML标签，给需要滚动时触发的元素添加ID。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"w-1000 pc-30"</span> <span class="attr">id</span>=<span class="string">"jsn"</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p>在样式表中编写好动画样式：</p>
-<p>.t-3为页面加载时添加的样式，.t-3h为页面滚动到该元素位置时添加的样式。（样式使用CSS预处理器SASS书写，需了解SASS请点击这里）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@mixin hover($value:.2s)&#123;-webkit-transition: all $value;-o-transition: all $value;-moz-transition: all $value;transition: all $value;&#125;</div><div class="line">.t-3&#123;transform: translate(0, 200px);@include hover(.8s);opacity: 0;filter: alpha(opacity=0);&#125;</div><div class="line">.t-3h&#123;transform: translate(0, 0);opacity: 1;filter: alpha(opacity=100);&#125;</div></pre></td></tr></table></figure></p>
-<h3 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h3><p>判断元素滚动到页面底部的时候加载.t-3h样式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var jsn=$(&apos;#jsn&apos;)；</div><div class="line">$(window).scroll(function() &#123;</div><div class="line">        if ($(window).scrollTop() &gt; 0) &#123;</div><div class="line">            jsn.addClass(&apos;t-3&apos;);</div><div class="line">        &#125;</div><div class="line">        if ($(window).scrollTop() &gt; $jsn.offset().top - $(window).height()) &#123;</div><div class="line">            jsn.addClass(&apos;t-3h&apos;);</div><div class="line">        &#125;else&#123;</div><div class="line">            jsn.removeClass(&apos;t-3h&apos;);</div><div class="line">        &#125;  </div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>.t-3为页面加载时添加的样式，.t-3h为页面滚动到该元素位置时添加的样式。（样式使用CSS预处理器SASS书写，需了解SASS请点击这里）<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@mixin hover($value:.2s)&#123;-webkit-transition: all $value;-o-transition: all $value;-moz-transition: all $value;transition: all $value;&#125;</div><div class="line">.t-3&#123;transform: translate(0, 200px);@include hover(.8s);opacity: 0;filter: alpha(opacity=0);&#125;</div><div class="line">.t-3h&#123;transform: translate(0, 0);opacity: 1;filter: alpha(opacity=100);&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h3><p>判断元素滚动到页面底部的时候加载.t-3h样式。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> jsn=$(<span class="string">'#jsn'</span>)；</div><div class="line">$(<span class="built_in">window</span>).scroll(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> ($(<span class="built_in">window</span>).scrollTop() &gt; <span class="number">0</span>) &#123;</div><div class="line">            jsn.addClass(<span class="string">'t-3'</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> ($(<span class="built_in">window</span>).scrollTop() &gt; $jsn.offset().top - $(<span class="built_in">window</span>).height()) &#123;</div><div class="line">            jsn.addClass(<span class="string">'t-3h'</span>);</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            jsn.removeClass(<span class="string">'t-3h'</span>);</div><div class="line">        &#125;  </div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
 <p>ps：通过一些插件可以更简单的实现该类效果，如scrollReveal.js、wow.js等，该类插件将在后面介绍。</p>
 
       

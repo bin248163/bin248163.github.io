@@ -20,7 +20,7 @@ coding注册 创建项目在coding上注册账号并创建项目,项目名称需
 <meta property="og:image" content="http://blog.qianxiaoduan.com/2017/02/17/coding/2.png">
 <meta property="og:image" content="http://blog.qianxiaoduan.com/2017/02/17/coding/3.png">
 <meta property="og:image" content="http://blog.qianxiaoduan.com/2017/02/17/coding/2.png">
-<meta property="og:updated_time" content="2017-02-17T06:25:38.926Z">
+<meta property="og:updated_time" content="2017-03-06T08:33:35.375Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将hexo博客同步托管到coding">
 <meta name="twitter:description" content="之前我们把hexo托管在github，但是毕竟github是国外的，访问速度得不到保证，还有一点因为百度联盟广告脚本被插入攻击github导致github禁止百度爬虫，所以百度的收录也有问题，因此在国内的托管平台部署一份也很重要，权衡之下决定部署到coding。
@@ -207,7 +207,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <p>之前我们把hexo托管在github，但是毕竟github是国外的，访问速度得不到保证，还有一点因为百度联盟广告脚本被插入攻击github导致github禁止百度爬虫，所以百度的收录也有问题，因此在国内的托管平台部署一份也很重要，权衡之下决定部署到coding。</p>
-<h3 id="coding注册-创建项目"><a href="#coding注册-创建项目" class="headerlink" title="coding注册 创建项目"></a>coding注册 创建项目</h3><p>在coding上注册账号并创建项目,项目名称需要与账户名称一致,否则可能因为路径错误使一些资源如样式等加载失败。<br><a id="more"></a><br><img src="/2017/02/17/coding/1.png" alt="coding"></p>
+<h3 id="coding注册-创建项目"><a href="#coding注册-创建项目" class="headerlink" title="coding注册 创建项目"></a>coding注册 创建项目</h3><p>在coding上注册账号并创建项目,项目名称需要与账户名称一致,否则可能因为路径错误使一些资源如样式等加载失败。<a id="more"></a><br><img src="/2017/02/17/coding/1.png" alt="coding"></p>
 <h3 id="配置修改"><a href="#配置修改" class="headerlink" title="配置修改"></a>配置修改</h3><p>需要把blog同时部署到github与coding需要在根目录_config.yml中做出如下修改：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy: </div><div class="line">  type: git</div><div class="line">  repo: </div><div class="line">    github: http://github.com/bin248163/bin248163.github.io.git</div><div class="line">    coding: http://git.coding.net/bin248163/bin248163.git</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
 <p>注意代码中的空格</p>
 <h3 id="公钥设置"><a href="#公钥设置" class="headerlink" title="公钥设置"></a>公钥设置</h3><p>与github公钥添加过程相同，在本地找到.ssh文件，复制文件内容到如下位置：</p>
