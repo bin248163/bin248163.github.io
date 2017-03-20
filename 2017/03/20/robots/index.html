@@ -6,18 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blog.qianxiaoduan.com">
-  <title>JQuery在IE下 attr 对src取值的问题 | 前小端-web前端开发</title>
+  <title>robots.txt文件用法整理 | 前小端-web前端开发</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JQuery的写法123456$(&apos;.videoA&apos;).click(function() &amp;#123;       var spUrl = $(this).attr(&quot;href&quot;);       $(&apos;.video object&apos;).attr(&quot;date&quot;,spUrl);       $(&apos;.video-w&apos;).show();       return false;           &amp;#125">
+  <meta name="description" content="robots.txt是搜索引擎中访问网站的时候要查看的第一个文件，文件告诉蜘蛛程序在服务器上什么文件是可以被查看。
+robots.txt文件应该放置在网站根目录下。举例来说，当一个搜索蜘蛛访问一个站点时，它会首先检查该站点根目录下是否存在robots.txt，如果存在，搜索机器人就会按照该文件中的内容来确定访问的范围；如果该文件不存在，所有的搜索蜘蛛将能够访问网站上所有没有被口令保护的页面。仅当网">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JQuery在IE下 attr 对src取值的问题">
-<meta property="og:url" content="http://blog.qianxiaoduan.com/2017/02/15/attr/index.html">
+<meta property="og:title" content="robots.txt文件用法整理">
+<meta property="og:url" content="http://blog.qianxiaoduan.com/2017/03/20/robots/index.html">
 <meta property="og:site_name" content="前小端-web前端开发">
-<meta property="og:description" content="JQuery的写法123456$(&apos;.videoA&apos;).click(function() &amp;#123;       var spUrl = $(this).attr(&quot;href&quot;);       $(&apos;.video object&apos;).attr(&quot;date&quot;,spUrl);       $(&apos;.video-w&apos;).show();       return false;           &amp;#125">
-<meta property="og:updated_time" content="2017-03-06T08:40:56.276Z">
+<meta property="og:description" content="robots.txt是搜索引擎中访问网站的时候要查看的第一个文件，文件告诉蜘蛛程序在服务器上什么文件是可以被查看。
+robots.txt文件应该放置在网站根目录下。举例来说，当一个搜索蜘蛛访问一个站点时，它会首先检查该站点根目录下是否存在robots.txt，如果存在，搜索机器人就会按照该文件中的内容来确定访问的范围；如果该文件不存在，所有的搜索蜘蛛将能够访问网站上所有没有被口令保护的页面。仅当网">
+<meta property="og:updated_time" content="2017-03-20T10:24:27.407Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JQuery在IE下 attr 对src取值的问题">
-<meta name="twitter:description" content="JQuery的写法123456$(&apos;.videoA&apos;).click(function() &amp;#123;       var spUrl = $(this).attr(&quot;href&quot;);       $(&apos;.video object&apos;).attr(&quot;date&quot;,spUrl);       $(&apos;.video-w&apos;).show();       return false;           &amp;#125">
+<meta name="twitter:title" content="robots.txt文件用法整理">
+<meta name="twitter:description" content="robots.txt是搜索引擎中访问网站的时候要查看的第一个文件，文件告诉蜘蛛程序在服务器上什么文件是可以被查看。
+robots.txt文件应该放置在网站根目录下。举例来说，当一个搜索蜘蛛访问一个站点时，它会首先检查该站点根目录下是否存在robots.txt，如果存在，搜索机器人就会按照该文件中的内容来确定访问的范围；如果该文件不存在，所有的搜索蜘蛛将能够访问网站上所有没有被口令保护的页面。仅当网">
   
     <link rel="alternative" href="/atom.xml" title="前小端-web前端开发" type="application/atom+xml">
   
@@ -190,29 +193,40 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-attr" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-robots" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      JQuery在IE下 attr 对src取值的问题
+      robots.txt文件用法整理
     </h1>
   
 
         
-        <a href="/2017/02/15/attr/" class="archive-article-date">
-  	<time datetime="2017-02-15T03:19:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-15</time>
+        <a href="/2017/03/20/robots/" class="archive-article-date">
+  	<time datetime="2017-03-20T09:50:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>JQuery的写法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'.videoA'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">       <span class="keyword">var</span> spUrl = $(<span class="keyword">this</span>).attr(<span class="string">"href"</span>);</div><div class="line">       $(<span class="string">'.video object'</span>).attr(<span class="string">"date"</span>,spUrl);</div><div class="line">       $(<span class="string">'.video-w'</span>).show();</div><div class="line">       <span class="keyword">return</span> <span class="literal">false</span>;        </div><div class="line">   &#125;);</div></pre></td></tr></table></figure></p>
+        <p>robots.txt是搜索引擎中访问网站的时候要查看的第一个文件，文件告诉蜘蛛程序在服务器上什么文件是可以被查看。</p>
+<p>robots.txt文件应该放置在网站根目录下。举例来说，当一个搜索蜘蛛访问一个站点时，它会首先检查该站点根目录下是否存在robots.txt，如果存在，搜索机器人就会按照该文件中的内容来确定访问的范围；如果该文件不存在，所有的搜索蜘蛛将能够访问网站上所有没有被口令保护的页面。仅当网站包含不希望被搜索引擎收录的内容时，才需要使用robots.txt文件。如果希望搜索引擎收录网站上所有内容，请勿建立robots.txt文件。</p>
+<h4 id="禁止所有搜索引擎访问网站的任何部分"><a href="#禁止所有搜索引擎访问网站的任何部分" class="headerlink" title="禁止所有搜索引擎访问网站的任何部分"></a>禁止所有搜索引擎访问网站的任何部分</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">User-agent: *</div><div class="line">  Disallow: /</div></pre></td></tr></table></figure>
 <a id="more"></a>
-<p>需兼容IE则可以不用attr，而使用.html替换整个div内部的内容<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'.videoA'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">       <span class="keyword">var</span> spUrl = $(<span class="keyword">this</span>).attr(<span class="string">"href"</span>);</div><div class="line">       <span class="keyword">var</span> object_str=<span class="string">'&lt;object data="'</span>+spUrl+<span class="string">'" style="width: 100%;height: 100%;display: block;" /&gt;'</span>;</div><div class="line">       $(<span class="string">'.video'</span>).html(object_str);</div><div class="line">       $(<span class="string">'.video-w'</span>).show();</div><div class="line">       <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">   &#125;);</div></pre></td></tr></table></figure></p>
+<h4 id="允许所有的robot访问"><a href="#允许所有的robot访问" class="headerlink" title="允许所有的robot访问"></a>允许所有的robot访问</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">User-agent: *</div><div class="line">  Disallow:</div></pre></td></tr></table></figure>
+<p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">User-agent: * </div><div class="line">  Allow: /</div></pre></td></tr></table></figure></p>
+<h4 id="仅禁止Baiduspider访问您的网站"><a href="#仅禁止Baiduspider访问您的网站" class="headerlink" title="仅禁止Baiduspider访问您的网站"></a>仅禁止Baiduspider访问您的网站</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">User-agent: Baiduspider</div><div class="line">  Disallow: /</div></pre></td></tr></table></figure>
+<h4 id="禁止spider访问特定目录"><a href="#禁止spider访问特定目录" class="headerlink" title="禁止spider访问特定目录"></a>禁止spider访问特定目录</h4><p>假设站点上有两个目录需要对搜索引擎的访问做限制，对每一个目录必须分开声明，而不能写成 “Disallow: /img1/ /img2/“。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">User-agent: * </div><div class="line">  Disallow: /img1/</div><div class="line">  Disallow: /img2/</div></pre></td></tr></table></figure></p>
+<h4 id="允许访问指定目录"><a href="#允许访问指定目录" class="headerlink" title="允许访问指定目录"></a>允许访问指定目录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">User-agent: * </div><div class="line">  Allow: /img1/</div></pre></td></tr></table></figure>
+<h4 id="使用”-”限制访问内容"><a href="#使用”-”限制访问内容" class="headerlink" title="使用”*”限制访问内容"></a>使用”*”限制访问内容</h4><p>禁止访问/img1/目录下的所有以”.htm”为后缀的内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">User-agent: * </div><div class="line">  Disallow: /img1/*.htm</div></pre></td></tr></table></figure></p>
+<h4 id="使用”-”允许访问内容"><a href="#使用”-”允许访问内容" class="headerlink" title="使用”$”允许访问内容"></a>使用”$”允许访问内容</h4><p>仅允许访问以”.htm”为后缀的内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">User-agent: * </div><div class="line">  Allow: .htm$</div><div class="line">  Disallow: /</div></pre></td></tr></table></figure></p>
+<h4 id="禁止访问网站中所有的动态页面"><a href="#禁止访问网站中所有的动态页面" class="headerlink" title="禁止访问网站中所有的动态页面"></a>禁止访问网站中所有的动态页面</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">User-agent: * </div><div class="line">  Disallow: /*?*</div></pre></td></tr></table></figure>
+<h4 id="禁止抓取网站上所有图片"><a href="#禁止抓取网站上所有图片" class="headerlink" title="禁止抓取网站上所有图片"></a>禁止抓取网站上所有图片</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">User-agent: *</div><div class="line">  Disallow: .jpg$</div><div class="line">  Disallow: .jpeg$ </div><div class="line">  Disallow: .gif$ </div><div class="line">  Disallow: .png$ </div><div class="line">  Disallow: .bmp$</div></pre></td></tr></table></figure>
+<h4 id="仅允许Baiduspider抓取网页和-gif格式图片"><a href="#仅允许Baiduspider抓取网页和-gif格式图片" class="headerlink" title="仅允许Baiduspider抓取网页和.gif格式图片"></a>仅允许Baiduspider抓取网页和.gif格式图片</h4><p>允许抓取网页和gif格式图片，不允许抓取其他格式图片<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">User-agent: Baiduspider </div><div class="line">  Allow: .gif$ </div><div class="line">  Disallow: .jpg$ </div><div class="line">  Disallow: .jpeg$  </div><div class="line">  Disallow: .png$ </div><div class="line">  Disallow: .bmp$</div></pre></td></tr></table></figure></p>
 
       
 
@@ -257,7 +271,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">robots</a>
         		</li>
       		
 		</ul>
@@ -315,7 +329,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://blog.qianxiaoduan.com/2017/02/15/attr/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://blog.qianxiaoduan.com/2017/03/20/robots/" alt="微信分享二维码">
     </div>
 </div>
 <div class="mask js-mask"></div>
@@ -329,18 +343,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/02/15/radio/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          使用CSS、JQuery对input checkbox和radio样式美化
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/02/15/input/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">使用CSS修改HTML5 input placeholder颜色的实现</div>
+    <a href="/2017/03/20/ciyun/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用Tagxedo在线制作个性化词云</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -354,7 +359,7 @@ var _hmt = _hmt || [];
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="attr" data-title="JQuery在IE下 attr 对src取值的问题" data-url="http://blog.qianxiaoduan.com/2017/02/15/attr/"></div>
+	<div class="ds-thread" data-thread-key="robots" data-title="robots.txt文件用法整理" data-url="http://blog.qianxiaoduan.com/2017/03/20/robots/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
