@@ -6,17 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blog.qianxiaoduan.com">
-  <title>Archives: 2017/3 | 前小端-web前端开发</title>
+  <title>gulp配置教程 | 前小端-web前端开发</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个专注于前端开发的个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="前小端-web前端开发">
-<meta property="og:url" content="http://blog.qianxiaoduan.com/archives/2017/03/index.html">
+  <meta name="description" content="搭建gulp环境前需要安装node与gitnode: http://nodejs.cn/download/git: https://git-for-windows.github.io/
+打开git bash全局安装全局安装 gulp这里我们将 npm的注册表源设置为淘宝镜像来提升安装速度">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gulp配置教程">
+<meta property="og:url" content="http://blog.qianxiaoduan.com/2017/03/22/gulp/index.html">
 <meta property="og:site_name" content="前小端-web前端开发">
-<meta property="og:description" content="一个专注于前端开发的个人博客">
+<meta property="og:description" content="搭建gulp环境前需要安装node与gitnode: http://nodejs.cn/download/git: https://git-for-windows.github.io/
+打开git bash全局安装全局安装 gulp这里我们将 npm的注册表源设置为淘宝镜像来提升安装速度">
+<meta property="og:updated_time" content="2017-03-22T02:41:50.881Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前小端-web前端开发">
-<meta name="twitter:description" content="一个专注于前端开发的个人博客">
+<meta name="twitter:title" content="gulp配置教程">
+<meta name="twitter:description" content="搭建gulp环境前需要安装node与gitnode: http://nodejs.cn/download/git: https://git-for-windows.github.io/
+打开git bash全局安装全局安装 gulp这里我们将 npm的注册表源设置为淘宝镜像来提升安装速度">
   
     <link rel="alternative" href="/atom.xml" title="前小端-web前端开发" type="application/atom+xml">
   
@@ -189,36 +193,93 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-gulp" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/22/gulp/" class="archive-article-date">
-  	<time datetime="2017-03-22T02:18:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/22/gulp/">gulp配置教程</a>
+    <h1 class="article-title" itemprop="name">
+      gulp配置教程
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/03/22/gulp/" class="archive-article-date">
+  	<time datetime="2017-03-22T02:18:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="搭建gulp环境前需要安装node与git"><a href="#搭建gulp环境前需要安装node与git" class="headerlink" title="搭建gulp环境前需要安装node与git"></a>搭建gulp环境前需要安装node与git</h3><p>node: <a href="http://nodejs.cn/download/" target="_blank" rel="external">http://nodejs.cn/download/</a><br>git: <a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a></p>
+<h3 id="打开git-bash全局安装全局安装-gulp"><a href="#打开git-bash全局安装全局安装-gulp" class="headerlink" title="打开git bash全局安装全局安装 gulp"></a>打开<code>git bash</code>全局安装全局安装 gulp</h3><p>这里我们将 npm的注册表源设置为淘宝镜像来提升安装速度<a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure></p>
+<p>作为项目的开发依赖（devDependencies）安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install -g gulp</div></pre></td></tr></table></figure></p>
+<h3 id="定位到放置项目的位置，将gulp安装到项目本地"><a href="#定位到放置项目的位置，将gulp安装到项目本地" class="headerlink" title="定位到放置项目的位置，将gulp安装到项目本地"></a>定位到放置项目的位置，将gulp安装到项目本地</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install —-save-dev gulp</div></pre></td></tr></table></figure>
+<h3 id="在项目根目录新建gulpfile-js文件，运行gulp"><a href="#在项目根目录新建gulpfile-js文件，运行gulp" class="headerlink" title="在项目根目录新建gulpfile.js文件，运行gulp"></a>在项目根目录新建gulpfile.js文件，运行gulp</h3><p>假设我们的项目需要如下任务：</p>
+<ul>
+<li>检查Javascript</li>
+<li>编译Sass（或Less之类的）文件</li>
+<li>合并Javascript</li>
+<li>压缩并重命名合并后的Javascript</li>
+</ul>
+<p>安装依赖<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev</div></pre></td></tr></table></figure></p>
+<p>将如下代码粘贴到gulpfile.js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line">// 引入 gulp</div><div class="line">var gulp = require(&apos;gulp&apos;); </div><div class="line"></div><div class="line">// 引入组件</div><div class="line">var jshint = require(&apos;gulp-jshint&apos;);</div><div class="line">var sass = require(&apos;gulp-sass&apos;);</div><div class="line">var concat = require(&apos;gulp-concat&apos;);</div><div class="line">var uglify = require(&apos;gulp-uglify&apos;);</div><div class="line">var rename = require(&apos;gulp-rename&apos;);</div><div class="line"></div><div class="line">// 检查脚本</div><div class="line">gulp.task(&apos;lint&apos;, function() &#123;</div><div class="line">    gulp.src(&apos;./js/*.js&apos;)</div><div class="line">        .pipe(jshint())</div><div class="line">        .pipe(jshint.reporter(&apos;default&apos;));</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 编译Sass</div><div class="line">gulp.task(&apos;sass&apos;, function() &#123;</div><div class="line">    gulp.src(&apos;./scss/*.scss&apos;)</div><div class="line">        .pipe(sass())</div><div class="line">        .pipe(gulp.dest(&apos;./css&apos;));</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 合并，压缩文件</div><div class="line">gulp.task(&apos;scripts&apos;, function() &#123;</div><div class="line">    gulp.src(&apos;./js/*.js&apos;)</div><div class="line">        .pipe(concat(&apos;all.js&apos;))</div><div class="line">        .pipe(gulp.dest(&apos;./dist&apos;))</div><div class="line">        .pipe(rename(&apos;all.min.js&apos;))</div><div class="line">        .pipe(uglify())</div><div class="line">        .pipe(gulp.dest(&apos;./dist&apos;));</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 默认任务</div><div class="line">gulp.task(&apos;default&apos;, function()&#123;</div><div class="line">    gulp.run(&apos;lint&apos;, &apos;sass&apos;, &apos;scripts&apos;);</div><div class="line"></div><div class="line">    // 监听文件变化</div><div class="line">    gulp.watch(&apos;./js/*.js&apos;, function()&#123;</div><div class="line">        gulp.run(&apos;lint&apos;, &apos;sass&apos;, &apos;scripts&apos;);</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>分段解释下这段代码。</p>
+<p>引入组件</p>
+<p>var gulp = require(‘gulp’);<br>var jshint = require(‘gulp-jshint’);<br>var sass = require(‘gulp-sass’);<br>var concat = require(‘gulp-concat’);<br>var uglify = require(‘gulp-uglify’);<br>var rename = require(‘gulp-rename’);<br>这一步，我们引入了核心的gulp和其他依赖组件，接下来，分开创建lint, sass, scripts 和 default这四个不同的任务。</p>
+<p>Lint任务</p>
+<p>gulp.task(‘lint’, function() {<br>    gulp.src(‘./js/*.js’)<br>        .pipe(jshint())<br>        .pipe(jshint.reporter(‘default’));<br>});<br>Link任务会检查 js/ 目录下得js文件有没有报错或警告。</p>
+<p>Sass任务</p>
+<p>gulp.task(‘sass’, function() {<br>    gulp.src(‘./scss/*.scss’)<br>        .pipe(sass())<br>        .pipe(gulp.dest(‘./css’));<br>});<br>Sass任务会编译 scss/ 目录下的scss文件，并把编译完成的css文件保存到 /css 目录中。</p>
+<p>Scripts 任务</p>
+<p>gulp.task(‘scripts’, function() {<br>    gulp.src(‘./js/*.js’)<br>        .pipe(concat(‘all.js’))<br>        .pipe(gulp.dest(‘./dist’))<br>        .pipe(rename(‘all.min.js’))<br>        .pipe(uglify())<br>        .pipe(gulp.dest(‘./dist’));<br>});<br>scripts任务会合并 js/ 目录下得所有得js文件并输出到 dist/ 目录，然后gulp会重命名、压缩合并的文件，也输出到 dist/ 目录。</p>
+<p>default任务</p>
+<p>gulp.task(‘default’, function(){<br>    gulp.run(‘lint’, ‘sass’, ‘scripts’);<br>    gulp.watch(‘./js/*.js’, function(){<br>        gulp.run(‘lint’, ‘sass’, ‘scripts’);<br>    });<br>});<br>这时，我们创建了一个基于其他任务的default任务。使用 .run() 方法关联和运行我们上面定义的任务，使用 .watch() 方法去监听指定目录的文件变化，当有文件变化时，会运行回调定义的其他任务。</p>
+<p>现在，回到命令行，可以直接运行gulp任务了。</p>
+<p>gulp<br>这将执行定义的default任务，换言之，这和以下的命令式同一个意思</p>
+<p>gulp default<br>当然，我们可以运行在gulpfile.js中定义的任意任务，比如，现在运行sass任务：</p>
+<p>gulp sass</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/zfb.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/wx.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -231,136 +292,107 @@ var _hmt = _hmt || [];
 	</div>	
 
 
-          
+      
 
+      
+
+      
+        
+<wb:share-button appkey="827557553" addition="simple" type="button" style="float: right;"></wb:share-button>
+<div class="share-btn share-icons tooltip-left" style="display: none;">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://blog.qianxiaoduan.com/2017/03/22/gulp/" alt="微信分享二维码">
+    </div>
+</div>
+<div class="mask js-mask"></div>
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/20/robots/" class="archive-article-date">
-  	<time datetime="2017-03-20T09:50:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/20/robots/">robots.txt文件用法整理</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">robots</a>
-        		</li>
-      		
-		</ul>
-	</div>	
-
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/20/ciyun/" class="archive-article-date">
-  	<time datetime="2017-03-20T05:15:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/20/ciyun/">使用Tagxedo在线制作个性化词云</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">词云</a>
-        		</li>
-      		
-		</ul>
-	</div>	
-
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/04/vue/" class="archive-article-date">
-  	<time datetime="2017-03-04T04:36:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/04/vue/">vue.js开发环境的搭建</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>	
-
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/03/20/robots/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">robots.txt文件用法整理</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="gulp" data-title="gulp配置教程" data-url="http://blog.qianxiaoduan.com/2017/03/22/gulp/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"bin248163"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//blog.qianxiaoduan.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-    
+
 
 
           </div>
@@ -384,8 +416,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
