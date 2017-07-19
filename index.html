@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blog.qianxiaoduan.com">
-  <title>前小端-web前端开发</title>
+  <title>前小端用户体验设计</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个专注于前端开发的个人博客">
+  <meta name="description" content="前小端-致力于为用户提供更好的体验设计">
 <meta property="og:type" content="website">
-<meta property="og:title" content="前小端-web前端开发">
+<meta property="og:title" content="前小端用户体验设计">
 <meta property="og:url" content="http://blog.qianxiaoduan.com/index.html">
-<meta property="og:site_name" content="前小端-web前端开发">
-<meta property="og:description" content="一个专注于前端开发的个人博客">
+<meta property="og:site_name" content="前小端用户体验设计">
+<meta property="og:description" content="前小端-致力于为用户提供更好的体验设计">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前小端-web前端开发">
-<meta name="twitter:description" content="一个专注于前端开发的个人博客">
+<meta name="twitter:title" content="前小端用户体验设计">
+<meta name="twitter:description" content="前小端-致力于为用户提供更好的体验设计">
   
-    <link rel="alternative" href="/atom.xml" title="前小端-web前端开发" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="前小端用户体验设计" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -75,10 +75,10 @@ var _hmt = _hmt || [];
 			<img src="/1.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">bin</a></h1>
+		  <h1 class="header-author"><a href="/">前小端</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">闭关修炼ing~</p>
+		<p class="header-subtitle">前小端用户体验设计</p>
 		
 
 		<nav class="header-menu">
@@ -137,10 +137,10 @@ var _hmt = _hmt || [];
 				<img src="/1.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">bin</h1>
+			  <h1 class="header-author js-header-author">前小端</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>闭关修炼ing~<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>前小端用户体验设计<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -211,34 +211,10 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h3><p>index.php<br>header.php<br>footer.php<br>sidebar.php 侧边栏<br>category.php 分类页模板文件<br>single.php 文章模板页<br>comments.php 评论模板<br>style.css<br>screenshot.png<br>functions.php 预留功能函数文件</p>
-<h3 id="内置变量"><a href="#内置变量" class="headerlink" title="内置变量"></a>内置变量</h3><p>bloginfo(‘’)<br>get_bloginfo(‘’)<br>get_option(‘’)</p>
-<h3 id="添加、更新变量"><a href="#添加、更新变量" class="headerlink" title="添加、更新变量"></a>添加、更新变量</h3><p>update_option</p>
-<h4 id="添加访问量字段"><a href="#添加访问量字段" class="headerlink" title="添加访问量字段"></a>添加访问量字段</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">	$view=get_option(<span class="string">'view'</span>);</div><div class="line">	update_option(<span class="string">'view'</span>, $view + <span class="number">1</span>);</div><div class="line"><span class="meta">?&gt;</span></div><div class="line">&lt;p&gt;访问量：<span class="meta">&lt;?php</span> <span class="keyword">echo</span> get_option(<span class="string">'view'</span>) <span class="meta">?&gt;</span>&lt;/p&gt;</div></pre></td></tr></table></figure>
-<h3 id="输出文章列表"><a href="#输出文章列表" class="headerlink" title="输出文章列表"></a>输出文章列表</h3><p>have_posts() 判断是否有日志<br>the_posts() 获取下一篇文章的信息,并将信息存储全局变量$post中 //调用全局变量 global $post;<br>the_title() 获取变量标题<br>the_content() 获取当前日志的内容<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">if</span> (have_posts()) : <span class="keyword">while</span> (have_posts()) : the_post(); <span class="meta">?&gt;</span></div><div class="line">	&lt;li&gt;</div><div class="line">		&lt;h2&gt;&lt;a href=<span class="string">"&lt;?php the_permalink(); ?&gt;"</span>&gt;<span class="meta">&lt;?php</span> the_title(); <span class="meta">?&gt;</span>&lt;/a&gt;&lt;/h2&gt;</div><div class="line">		&lt;p&gt;<span class="meta">&lt;?php</span> the_excerpt(); <span class="meta">?&gt;</span>&lt;/p&gt;</div><div class="line">		&lt;span&gt;<span class="meta">&lt;?php</span> the_time(<span class="string">'Y-m-d'</span>) <span class="meta">?&gt;</span>&lt;/span&gt;</div><div class="line">	&lt;/li&gt;</div><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">endwhile</span>; <span class="meta">?&gt;</span></div><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">else</span> : <span class="meta">?&gt;</span></div><div class="line">	&lt;p&gt;没有找到文章&lt;/p&gt;</div><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">endif</span>; <span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<h3 id="文章元数据"><a href="#文章元数据" class="headerlink" title="文章元数据"></a>文章元数据</h3><p>the_category(‘,’) 获取当前文章分类,参数为多个分类分隔符<br>the_author() 获取当前文章发布作者<br>the_time() 获取当前文章发布时间,未设置日期格式则按照wordpress后台设置日期格式输出<br>edit_post_link(‘1’,’编辑’,’3’) 显示编辑链接,有三个参数，第一个为链接显示文字，23分别为链接前后显示内容<br>_e()、__() 获取翻译</p>
-<h3 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h3><p>posts_nav_link() 获取分页链接<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?</span> posts_nav_link() <span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<h3 id="侧边栏小工具"><a href="#侧边栏小工具" class="headerlink" title="侧边栏小工具"></a>侧边栏小工具</h3><p>functions.php中注册<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">register_sidebar(</div><div class="line">	<span class="keyword">array</span>(</div><div class="line">		<span class="string">'name'</span>   =&gt;<span class="string">'侧边栏'</span>,</div><div class="line">		<span class="string">'before_widget'</span>   =&gt;<span class="string">'&lt;div&gt;'</span>,</div><div class="line">		<span class="string">'after_widget'</span>   =&gt;<span class="string">'&lt;/div&gt;'</span>,</div><div class="line">		<span class="string">'before_title'</span>   =&gt;<span class="string">'&lt;h2&gt;'</span>,</div><div class="line">		<span class="string">'after_widget'</span>   =&gt;<span class="string">'&lt;/h2&gt;'</span>,</div><div class="line">	)</div><div class="line">)</div></pre></td></tr></table></figure></p>
-<p>可注册多个侧边栏进行调用<br>dynamic_sidebar(‘侧边栏’) sidebar页面调用，参数为侧边栏名称</p>
-<h3 id="自定义侧边栏"><a href="#自定义侧边栏" class="headerlink" title="自定义侧边栏"></a>自定义侧边栏</h3><p>当wordpress没有设置侧边栏，自定义侧边栏调用<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">	<span class="keyword">if</span> (is_dynamic_sidebar()) &#123;</div><div class="line">		dynamic_sidebar();</div><div class="line">	&#125; <span class="keyword">else</span> &#123;</div><div class="line">		显示自定义侧边栏;</div><div class="line">	&#125;</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<p>wp_list_cats() 获取分类列表<br>wp_list_pages() 获取页面信息<br>get_links() 显示友情链接<br>wp_register() 获取注册链接<br>wp_loginout() 获取退出登录链接<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">if</span> (is_dynamic_sidebar()) &#123;dynamic_sidebar();&#125; <span class="keyword">else</span> &#123;<span class="meta">?&gt;</span></div><div class="line">	<span class="meta">&lt;?php</span> wp_list_cats() <span class="meta">?&gt;</span></div><div class="line">	<span class="meta">&lt;?php</span> wp_list_pages() <span class="meta">?&gt;</span></div><div class="line">	<span class="meta">&lt;?php</span> wp_loginout() <span class="meta">?&gt;</span></div><div class="line">	<span class="meta">&lt;?php</span> wp_register() <span class="meta">?&gt;</span></div><div class="line"><span class="meta">&lt;?php</span> &#125; <span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<h3 id="顶部底部调用"><a href="#顶部底部调用" class="headerlink" title="顶部底部调用"></a>顶部底部调用</h3><p>get_header() 顶部调用<br>get_footer() 底部调用</p>
-<h3 id="分类页"><a href="#分类页" class="headerlink" title="分类页"></a>分类页</h3><p>single_cat_title() 获取当前分类标题</p>
-<h4 id="不同分类调用不同模板"><a href="#不同分类调用不同模板" class="headerlink" title="不同分类调用不同模板"></a>不同分类调用不同模板</h4><p>分类id调用的方式<br>category-10.php<br>分类别名调用的方式<br>category-news.php</p>
-<h3 id="文章内页"><a href="#文章内页" class="headerlink" title="文章内页"></a>文章内页</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">if</span> (have_posts()) : the_post(); update_post_caches($posts); <span class="meta">?&gt;</span></div><div class="line"><span class="meta">&lt;?php</span> the_content(); <span class="meta">?&gt;</span></div><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">else</span> : <span class="meta">?&gt;</span></div><div class="line">	没有文章！</div><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">endif</span>; <span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
-<p>previous_post_link() 上一篇文章链接<br>next_post_link() 下一篇文章链接<br>支持自定义文本样式：<br>next_post_link(‘下一篇：%link’)</p>
-<h3 id="控制文章列表内容长度"><a href="#控制文章列表内容长度" class="headerlink" title="控制文章列表内容长度"></a>控制文章列表内容长度</h3><h3 id="文章自定义栏目调用"><a href="#文章自定义栏目调用" class="headerlink" title="文章自定义栏目调用"></a>文章自定义栏目调用</h3><p>get_post_meta() 获取文章自定义栏目<br>globla $post 全局变量<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> $download = get_post_meta( $post-&gt;ID , <span class="string">'download'</span> , <span class="keyword">false</span>); <span class="meta">?&gt;</span></div><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> $download; <span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<p>true返回字符串<br>false返回数组<br>同一个key可以对应多个值<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> $downloads = get_post_meta( $post-&gt;ID , <span class="string">'download'</span> , <span class="keyword">false</span>); <span class="meta">?&gt;</span></div><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">	<span class="keyword">foreach</span> ($downloads <span class="keyword">as</span> $download) &#123;</div><div class="line">		<span class="keyword">echo</span> $download.<span class="string">'&lt;br&gt;'</span>;</div><div class="line">	&#125;				</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<p>add_post_meta() 通过代码添加自定义字段<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">	$downloads = get_post_meta( $post-&gt;ID , <span class="string">'download'</span> , <span class="keyword">false</span>); </div><div class="line">	<span class="keyword">if</span> (!$downloads) &#123;</div><div class="line">		add_post_meta( $post-&gt;ID , <span class="string">'download'</span>,<span class="string">'设置默认值'</span>);</div><div class="line">	&#125;</div><div class="line">				</div><div class="line"><span class="meta">?&gt;</span></div><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">	<span class="keyword">foreach</span> ($downloads <span class="keyword">as</span> $download) &#123;</div><div class="line">		<span class="keyword">echo</span> $download.<span class="string">'&lt;br&gt;'</span>;</div><div class="line">	&#125;				</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
-<h4 id="创建隐藏的自定义字段（防止误操作）"><a href="#创建隐藏的自定义字段（防止误操作）" class="headerlink" title="创建隐藏的自定义字段（防止误操作）"></a>创建隐藏的自定义字段（防止误操作）</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">	add_post_meta( $post-&gt;ID , <span class="string">'_view'</span>,<span class="number">100</span>);</div><div class="line"><span class="meta">?&gt;</span></div><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> add_post_meta( $post-&gt;ID , <span class="string">'_view'</span> , <span class="keyword">true</span>); <span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
-<h4 id="使用update-post-meta-更新自定义栏目"><a href="#使用update-post-meta-更新自定义栏目" class="headerlink" title="使用update_post_meta() 更新自定义栏目"></a>使用update_post_meta() 更新自定义栏目</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">	$zan=get_post_meta( $post-&gt;ID , <span class="string">'_zan'</span>, <span class="keyword">true</span>);</div><div class="line">	update_post_meta( $post-&gt;ID , <span class="string">'_zan'</span>, $zan + <span class="number">1</span>);</div><div class="line"><span class="meta">?&gt;</span></div><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> get_post_meta( $post-&gt;ID , <span class="string">'_zan'</span> , <span class="keyword">true</span>); <span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
-<h4 id="使用delete-post-meta-更新自定义栏目"><a href="#使用delete-post-meta-更新自定义栏目" class="headerlink" title="使用delete_post_meta() 更新自定义栏目"></a>使用delete_post_meta() 更新自定义栏目</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">delete_post_meta( $post-&gt;ID , <span class="string">'_zan'</span>);</div></pre></td></tr></table></figure>
-<p>第三个值用于删除多个值<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">delete_post_meta( $post-&gt;ID , <span class="string">'_zan'</span>,<span class="string">'100'</span>);</div></pre></td></tr></table></figure></p>
-<h3 id="不同文章内容页的调用"><a href="#不同文章内容页的调用" class="headerlink" title="不同文章内容页的调用"></a>不同文章内容页的调用</h3><p>15</p>
-<h3 id="独立页面文件（page-php）的调用"><a href="#独立页面文件（page-php）的调用" class="headerlink" title="独立页面文件（page.php）的调用"></a>独立页面文件（page.php）的调用</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"><span class="comment">/*</span></div><div class="line">Template Name: 关于我们</div><div class="line">*/</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
-<p>或者将页面命名为page-about.php</p>
-<h3 id="评论模板"><a href="#评论模板" class="headerlink" title="评论模板"></a>评论模板</h3><p>comments_template()<br>18</p>
-
+        <h3 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h3><p>index.php<br>header.php<br>footer.php<br>sidebar.php 侧边栏<br>category.php 分类页模板文件<br>single.php 文章模板页<br></p>
+        
+          <a class="article-more-a" href="/2017/07/09/wordoress1/#more">more >></a>
+        
       
 
       
@@ -1093,7 +1069,7 @@ var _hmt = _hmt || [];
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">前小端&lt;br&gt; &lt;br&gt; 专注于前端开发</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;br&gt; 致力于为用户提供更好的体验设计</div>
   	  	
     	</section>
     
