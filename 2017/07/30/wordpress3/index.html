@@ -6,21 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blog.qianxiaoduan.com">
-  <title>前端性能优化 | 前小端用户体验设计</title>
+  <title>wordpress常用代码段整理 | 前小端用户体验设计</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端性能优化的目的从用户角度而言，优化能够让页面加载得更快、对用户的操作响应得更及时，能够给用户提供更为友好的体验。 从服务商角度而言，优化能够减少页面请求数、或者减小请求所占带宽，能够节省可观的资源。
-前端性能优化的方法页面部分">
+  <meta name="description" content="标题123456789101112131415161718192021&amp;lt;?php 	if (function_exists(&apos;is_tag&apos;) &amp;amp;&amp;amp; is_tag()) &amp;#123;		single_tag_title(&apos;Tag Archive for &quot;&apos;); echo &apos;&quot; - &apos;;	&amp;#125; elseif (is_archive()) &amp;#123;		wp_titl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端性能优化">
-<meta property="og:url" content="http://blog.qianxiaoduan.com/2017/02/15/youhua/index.html">
+<meta property="og:title" content="wordpress常用代码段整理">
+<meta property="og:url" content="http://blog.qianxiaoduan.com/2017/07/30/wordpress3/index.html">
 <meta property="og:site_name" content="前小端用户体验设计">
-<meta property="og:description" content="前端性能优化的目的从用户角度而言，优化能够让页面加载得更快、对用户的操作响应得更及时，能够给用户提供更为友好的体验。 从服务商角度而言，优化能够减少页面请求数、或者减小请求所占带宽，能够节省可观的资源。
-前端性能优化的方法页面部分">
-<meta property="og:updated_time" content="2017-02-15T02:54:23.492Z">
+<meta property="og:description" content="标题123456789101112131415161718192021&amp;lt;?php 	if (function_exists(&apos;is_tag&apos;) &amp;amp;&amp;amp; is_tag()) &amp;#123;		single_tag_title(&apos;Tag Archive for &quot;&apos;); echo &apos;&quot; - &apos;;	&amp;#125; elseif (is_archive()) &amp;#123;		wp_titl">
+<meta property="og:updated_time" content="2017-07-30T11:15:35.857Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端性能优化">
-<meta name="twitter:description" content="前端性能优化的目的从用户角度而言，优化能够让页面加载得更快、对用户的操作响应得更及时，能够给用户提供更为友好的体验。 从服务商角度而言，优化能够减少页面请求数、或者减小请求所占带宽，能够节省可观的资源。
-前端性能优化的方法页面部分">
+<meta name="twitter:title" content="wordpress常用代码段整理">
+<meta name="twitter:description" content="标题123456789101112131415161718192021&amp;lt;?php 	if (function_exists(&apos;is_tag&apos;) &amp;amp;&amp;amp; is_tag()) &amp;#123;		single_tag_title(&apos;Tag Archive for &quot;&apos;); echo &apos;&quot; - &apos;;	&amp;#125; elseif (is_archive()) &amp;#123;		wp_titl">
   
     <link rel="alternative" href="/atom.xml" title="前小端用户体验设计" type="application/atom+xml">
   
@@ -193,62 +190,35 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-youhua" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-wordpress3" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      前端性能优化
+      wordpress常用代码段整理
     </h1>
   
 
         
-        <a href="/2017/02/15/youhua/" class="archive-article-date">
-  	<time datetime="2017-02-15T02:45:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-15</time>
+        <a href="/2017/07/30/wordpress3/" class="archive-article-date">
+  	<time datetime="2017-07-30T10:48:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-30</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="前端性能优化的目的"><a href="#前端性能优化的目的" class="headerlink" title="前端性能优化的目的"></a>前端性能优化的目的</h3><p>从用户角度而言，优化能够让页面加载得更快、对用户的操作响应得更及时，能够给用户提供更为友好的体验。 从服务商角度而言，优化能够减少页面请求数、或者减小请求所占带宽，能够节省可观的资源。</p>
-<h3 id="前端性能优化的方法"><a href="#前端性能优化的方法" class="headerlink" title="前端性能优化的方法"></a>前端性能优化的方法</h3><p>页面部分<br><a id="more"></a></p>
-<ul>
-<li>减少Http请求数量</li>
-<li>减少DNS查询次数</li>
-<li>尽量避免ifreme框架的使用</li>
-<li>避免网站出现404</li>
-</ul>
-<p>JavaScript</p>
-<ul>
-<li>将脚本置于底部</li>
-<li>使用外部JavaScript</li>
-<li>合并脚本</li>
-<li>JavaScript压缩</li>
-</ul>
-<p>CSS</p>
-<ul>
-<li>样式表置于页面顶部</li>
-<li>使用link代替@import</li>
-<li>避免使用表达式</li>
-</ul>
-<p>图片</p>
-<ul>
-<li>压缩图像大小</li>
-<li>合并 CSS图片</li>
-<li>合理使用字体图标</li>
-<li>对图片进行懒加载处理</li>
-</ul>
-<p>服务器端</p>
-<ul>
-<li>使用CDN</li>
-<li>开启Gzip压缩</li>
-<li>避免图片空连接</li>
-<li>减少跳转</li>
-<li>避免重复请求</li>
-</ul>
+        <h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">	<span class="keyword">if</span> (function_exists(<span class="string">'is_tag'</span>) &amp;&amp; is_tag()) &#123;</div><div class="line">		single_tag_title(<span class="string">'Tag Archive for "'</span>); <span class="keyword">echo</span> <span class="string">'" - '</span>;</div><div class="line">	&#125; <span class="keyword">elseif</span> (is_archive()) &#123;</div><div class="line">		wp_title(<span class="string">''</span>); <span class="keyword">echo</span> <span class="string">' - '</span>;</div><div class="line">	&#125; <span class="keyword">elseif</span> (is_search()) &#123;</div><div class="line">		<span class="keyword">echo</span> <span class="string">'Search for "'</span>.wp_specialchars($s).<span class="string">'" - '</span>;</div><div class="line">	&#125; <span class="keyword">elseif</span> (!(is_404()) &amp;&amp; (is_single()) || (is_page())) &#123;</div><div class="line">		wp_title(<span class="string">''</span>); <span class="keyword">echo</span> <span class="string">' - '</span>;</div><div class="line">	&#125; <span class="keyword">elseif</span> (is_404()) &#123;</div><div class="line">		<span class="keyword">echo</span> <span class="string">'Not Found - '</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span> (is_home()) &#123;</div><div class="line">		bloginfo(<span class="string">'name'</span>); <span class="keyword">echo</span> <span class="string">' - '</span>; bloginfo(<span class="string">'description'</span>);</div><div class="line">	&#125; <span class="keyword">else</span> &#123;</div><div class="line">		bloginfo(<span class="string">'name'</span>);</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span> ($paged &gt; <span class="number">1</span>) &#123;</div><div class="line">		<span class="keyword">echo</span> <span class="string">' - page '</span>. $paged;</div><div class="line">	&#125; </div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="使用分类别名进行分类文章调用"><a href="#使用分类别名进行分类文章调用" class="headerlink" title="使用分类别名进行分类文章调用"></a>使用分类别名进行分类文章调用</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">	$args=<span class="keyword">array</span>(  </div><div class="line">        <span class="string">'category_name'</span> =&gt; <span class="string">'team'</span>,  </div><div class="line">        <span class="string">'posts_per_page'</span> =&gt; <span class="number">3</span>, </div><div class="line">    );  </div><div class="line">    query_posts($args);   </div><div class="line">    <span class="keyword">if</span>(have_posts()) : <span class="keyword">while</span> (have_posts()) : the_post();  </div><div class="line"><span class="meta">?&gt;</span>  </div><div class="line">	循环内容				</div><div class="line"><span class="meta">&lt;?php</span>  <span class="keyword">endwhile</span>; <span class="keyword">endif</span>; wp_reset_query(); <span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="缩略图"><a href="#缩略图" class="headerlink" title="缩略图"></a>缩略图</h3><p>首先检测有没有设置缩略图，如没有则查找文章内容页有无图片，如没有则调用指定图片<br>functions<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">add_theme_support( <span class="string">'post-thumbnails'</span> );</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">get_post_img_url</span><span class="params">($thumbnail = true)</span> </span>&#123;</div><div class="line">	<span class="keyword">global</span> $post;	</div><div class="line">	<span class="keyword">if</span> (has_post_thumbnail ()) &#123;</div><div class="line">		$domsxe = simplexml_load_string ( get_the_post_thumbnail () );</div><div class="line">		$thumbnailsrc = $domsxe-&gt;attributes()-&gt;src;</div><div class="line">		<span class="keyword">return</span> $thumbnailsrc;		</div><div class="line">	&#125;<span class="keyword">elseif</span> ($thumbnail) &#123;</div><div class="line">		$content = $post-&gt;post_content;</div><div class="line">		preg_match_all ( <span class="string">'/&lt;img.*?(?: |\\t|\\r|\\n)?src=[\'"]?(.+?)[\'"]?(?:(?: |\\t|\\r|\\n)+.*?)?&gt;/sim'</span>, $content, $strResult, PREG_PATTERN_ORDER );</div><div class="line">		$n = count ( $strResult [<span class="number">1</span>] );</div><div class="line">			<span class="keyword">if</span> ($n &gt; <span class="number">0</span>) &#123;</div><div class="line">				<span class="keyword">return</span> $strResult [<span class="number">1</span>] [<span class="number">0</span>] ;</div><div class="line">			&#125; <span class="keyword">else</span> &#123;</div><div class="line">				<span class="keyword">return</span> trailingslashit( get_template_directory_uri() ) . <span class="string">'images/c1.jpg'</span>;</div><div class="line">			&#125;			</div><div class="line">	&#125;<span class="keyword">else</span> &#123;</div><div class="line">		<span class="keyword">return</span> trailingslashit( get_template_directory_uri() ) . <span class="string">'images/c1.jpg'</span>;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>页面内调用<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> get_post_img_url(<span class="keyword">true</span>); <span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="自定义后台栏目"><a href="#自定义后台栏目" class="headerlink" title="自定义后台栏目"></a>自定义后台栏目</h3><p>新建themeoptions_page页面，在functions中添加如下内容<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">function themeoptions_admin_menu()</div><div class="line">&#123;</div><div class="line">// 在控制面板的侧边栏添加设置选项页链接</div><div class="line">add_menu_page('站点设置', '站点设置', 'edit_themes', basename(__FILE__), 'themeoptions_page');</div><div class="line">&#125;</div><div class="line">if ( $_POST['update_themeoptions'] == 'true' ) &#123; themeoptions_update(); &#125;	</div><div class="line">?&gt;</div><div class="line">&lt;div class="wrap"&gt;</div><div class="line">    &lt;div id="icon-themes" class="icon32"&gt;&lt;br /&gt;&lt;/div&gt;</div><div class="line">    &lt;h2&gt;站点设置&lt;/h2&gt;</div><div class="line">    &lt;form method="POST" action=""&gt;</div><div class="line">        &lt;input type="hidden" name="update_themeoptions" value="true" /&gt;  </div><div class="line">        &lt;h4&gt;头部设置&lt;/h4&gt;</div><div class="line">        &lt;p&gt;关键词：&lt;input type="text" name="bin_keywords" size="32" value="&lt;?php echo get_option('bin_keywords'); ?&gt;"/&gt;&lt;/p&gt; </div><div class="line">    &lt;/form&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;?php</div><div class="line">wp_enqueue_media();</div><div class="line">&#125;</div><div class="line">add_action('admin_menu', 'themeoptions_admin_menu');</div><div class="line"></div><div class="line">function themeoptions_update()</div><div class="line">&#123;</div><div class="line">    // 数据更新验证</div><div class="line">    update_option('bin_keywords', $_POST['bin_keywords']);</div><div class="line">	update_option('bin_description', $_POST['bin_description']);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>页面内调用<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> get_option(<span class="string">'bin_keywords'</span>); <span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="文章自定义字段"><a href="#文章自定义字段" class="headerlink" title="文章自定义字段"></a>文章自定义字段</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line">$new_meta_boxes =</div><div class="line"><span class="keyword">array</span>(</div><div class="line">    <span class="string">"add1"</span> =&gt; <span class="keyword">array</span>(</div><div class="line">        <span class="string">"name"</span> =&gt; <span class="string">"add1"</span>,</div><div class="line">        <span class="string">"std"</span> =&gt; <span class="string">""</span>,</div><div class="line">        <span class="string">"title"</span> =&gt; <span class="string">"职位:"</span>),</div><div class="line"> </div><div class="line">    <span class="string">"add2"</span> =&gt; <span class="keyword">array</span>(</div><div class="line">        <span class="string">"name"</span> =&gt; <span class="string">"add2"</span>,</div><div class="line">        <span class="string">"std"</span> =&gt; <span class="string">""</span>,</div><div class="line">        <span class="string">"title"</span> =&gt; <span class="string">"从业经验:"</span>)</div><div class="line">);</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">new_meta_boxes</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">global</span> $post, $new_meta_boxes;</div><div class="line"> </div><div class="line">    <span class="keyword">foreach</span>($new_meta_boxes <span class="keyword">as</span> $meta_box) &#123;</div><div class="line">        $meta_box_value = get_post_meta($post-&gt;ID, $meta_box[<span class="string">'name'</span>].<span class="string">'_value'</span>, <span class="keyword">true</span>);</div><div class="line"> </div><div class="line">        <span class="keyword">if</span>($meta_box_value == <span class="string">""</span>)</div><div class="line">            $meta_box_value = $meta_box[<span class="string">'std'</span>];</div><div class="line">        <span class="comment">// 自定义字段输入框</span></div><div class="line">        <span class="keyword">echo</span> <span class="string">'&lt;p&gt;&lt;span style="display:inline-block;width:80px"&gt;'</span>.$meta_box[<span class="string">'title'</span>].<span class="string">'&lt;/span&gt;&lt;input type="text"  size="32" name="'</span>.$meta_box[<span class="string">'name'</span>].<span class="string">'_value" value="'</span>.$meta_box_value.<span class="string">'"/&gt;&lt;/p&gt;'</span>;</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    <span class="keyword">echo</span> <span class="string">'&lt;input type="hidden" name="newmetaboxes_noncename" id="newmetaboxes_noncename" value="'</span>.wp_create_nonce( plugin_basename(<span class="keyword">__FILE__</span>) ).<span class="string">'" /&gt;'</span>;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">create_meta_box</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">global</span> $theme_name;</div><div class="line"> </div><div class="line">    <span class="keyword">if</span> ( function_exists(<span class="string">'add_meta_box'</span>) ) &#123;</div><div class="line">        add_meta_box( <span class="string">'new-meta-boxes'</span>, <span class="string">'自定义模块（团队成员）'</span>, <span class="string">'new_meta_boxes'</span>, <span class="string">'post'</span>, <span class="string">'normal'</span>, <span class="string">'high'</span> );</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">save_postdata</span><span class="params">( $post_id )</span> </span>&#123;</div><div class="line">    <span class="keyword">global</span> $new_meta_boxes;</div><div class="line"> </div><div class="line">    <span class="keyword">if</span> ( !wp_verify_nonce( $_POST[<span class="string">'newmetaboxes_noncename'</span>], plugin_basename(<span class="keyword">__FILE__</span>) ))</div><div class="line">        <span class="keyword">return</span>;</div><div class="line"> </div><div class="line">    <span class="keyword">if</span> ( !current_user_can( <span class="string">'edit_posts'</span>, $post_id ))</div><div class="line">        <span class="keyword">return</span>;</div><div class="line"> </div><div class="line">    <span class="keyword">foreach</span>($new_meta_boxes <span class="keyword">as</span> $meta_box) &#123;</div><div class="line">        $data = $_POST[$meta_box[<span class="string">'name'</span>].<span class="string">'_value'</span>];</div><div class="line"> </div><div class="line">        <span class="keyword">if</span>(get_post_meta($post_id, $meta_box[<span class="string">'name'</span>].<span class="string">'_value'</span>) == <span class="string">""</span>)</div><div class="line">            add_post_meta($post_id, $meta_box[<span class="string">'name'</span>].<span class="string">'_value'</span>, $data, <span class="keyword">true</span>);</div><div class="line">        <span class="keyword">elseif</span>($data != get_post_meta($post_id, $meta_box[<span class="string">'name'</span>].<span class="string">'_value'</span>, <span class="keyword">true</span>))</div><div class="line">            update_post_meta($post_id, $meta_box[<span class="string">'name'</span>].<span class="string">'_value'</span>, $data);</div><div class="line">        <span class="keyword">elseif</span>($data == <span class="string">""</span>)</div><div class="line">            delete_post_meta($post_id, $meta_box[<span class="string">'name'</span>].<span class="string">'_value'</span>, get_post_meta($post_id, $meta_box[<span class="string">'name'</span>].<span class="string">'_value'</span>, <span class="keyword">true</span>));</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">add_action(<span class="string">'admin_menu'</span>, <span class="string">'create_meta_box'</span>);</div><div class="line">add_action(<span class="string">'save_post'</span>, <span class="string">'save_postdata'</span>);</div></pre></td></tr></table></figure>
+<h3 id="在后台头部添加链接"><a href="#在后台头部添加链接" class="headerlink" title="在后台头部添加链接"></a>在后台头部添加链接</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">custom_adminbar_menu</span><span class="params">( $meta = TRUE )</span> </span>&#123;  </div><div class="line">    <span class="keyword">global</span> $wp_admin_bar;  </div><div class="line">        <span class="keyword">if</span> ( !is_user_logged_in() ) &#123; <span class="keyword">return</span>; &#125;  </div><div class="line">        <span class="keyword">if</span> ( !is_super_admin() || !is_admin_bar_showing() ) &#123; <span class="keyword">return</span>; &#125;  </div><div class="line">    $wp_admin_bar-&gt;add_menu( <span class="keyword">array</span>(  </div><div class="line">        <span class="string">'id'</span> =&gt; <span class="string">'custom_menu'</span>,  </div><div class="line">        <span class="string">'title'</span> =&gt; __( <span class="string">'操作遇到问题？联系我们'</span> ),  </div><div class="line">        <span class="string">'href'</span> =&gt; <span class="string">'http://www.qianxiaoduan.com/'</span>,  </div><div class="line">        <span class="string">'meta'</span>  =&gt; <span class="keyword">array</span>( target =&gt; <span class="string">'_blank'</span> ) )  </div><div class="line">    );  </div><div class="line">&#125;  </div><div class="line">add_action( <span class="string">'admin_bar_menu'</span>, <span class="string">'custom_adminbar_menu'</span>, <span class="number">100</span> );</div></pre></td></tr></table></figure>
+<h3 id="自定义头像"><a href="#自定义头像" class="headerlink" title="自定义头像"></a>自定义头像</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">add_filter( <span class="string">'get_avatar'</span> , <span class="string">'my_custom_avatar'</span> , <span class="number">1</span> , <span class="number">5</span> );</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">my_custom_avatar</span><span class="params">( $avatar, $id_or_email, $size, $default, $alt)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> ( ! <span class="keyword">empty</span>( $id_or_email-&gt;user_id ) ) &#123;</div><div class="line">        $avatar = <span class="string">"http://blog.qianxiaoduan.com/1.png"</span>;</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        $avatar = <span class="string">"http://blog.qianxiaoduan.com/1.png"</span>;</div><div class="line">    &#125;</div><div class="line">    $avatar = <span class="string">"&lt;img alt='&#123;$alt&#125;' src='&#123;$avatar&#125;' class='avatar avatar-&#123;$size&#125; photo' height='&#123;$size&#125;' width='&#123;$size&#125;' /&gt;"</span>;</div><div class="line">    <span class="keyword">return</span> $avatar;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
 
@@ -293,7 +263,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端开发</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">wordpress</a>
         		</li>
       		
 		</ul>
@@ -351,7 +321,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://blog.qianxiaoduan.com/2017/02/15/youhua/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://blog.qianxiaoduan.com/2017/07/30/wordpress3/" alt="微信分享二维码">
     </div>
 </div>
 <div class="mask js-mask"></div>
@@ -365,18 +335,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/02/15/icon/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Iconfont（阿里巴巴矢量图标库）- 前端开发使用教程
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/02/15/rem/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">移动端布局之rem</div>
+    <a href="/2017/07/09/wordoress1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">wordoress主题开发</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -390,7 +351,7 @@ var _hmt = _hmt || [];
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="youhua" data-title="前端性能优化" data-url="http://blog.qianxiaoduan.com/2017/02/15/youhua/"></div>
+	<div class="ds-thread" data-thread-key="wordpress3" data-title="wordpress常用代码段整理" data-url="http://blog.qianxiaoduan.com/2017/07/30/wordpress3/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

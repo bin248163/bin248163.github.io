@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://blog.qianxiaoduan.com/2017/07/09/wordoress1/index.html">
 <meta property="og:site_name" content="前小端用户体验设计">
 <meta property="og:description" content="文件index.phpheader.phpfooter.phpsidebar.php 侧边栏category.php 分类页模板文件single.php 文章模板页">
-<meta property="og:updated_time" content="2017-07-23T12:36:08.316Z">
+<meta property="og:updated_time" content="2017-07-26T12:24:53.502Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wordoress主题开发">
 <meta name="twitter:description" content="文件index.phpheader.phpfooter.phpsidebar.php 侧边栏category.php 分类页模板文件single.php 文章模板页">
@@ -241,7 +241,7 @@ var _hmt = _hmt || [];
 <h3 id="评论模板"><a href="#评论模板" class="headerlink" title="评论模板"></a>评论模板</h3><p>comments_template()<br>18</p>
 <h3 id="获取搜索值"><a href="#获取搜索值" class="headerlink" title="获取搜索值"></a>获取搜索值</h3><p>get_search_query()</p>
 <h3 id="菜单调用"><a href="#菜单调用" class="headerlink" title="菜单调用"></a>菜单调用</h3><p>wp_nav_menu()<br>参数调用指定菜单<br>wp_nav_menu(array(‘menu’ =&gt; ‘home’))</p>
-<h3 id="标题判断函数"><a href="#标题判断函数" class="headerlink" title="标题判断函数"></a>标题判断函数</h3><p>is_home()<br>wp_title() 页面标题<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">	<span class="keyword">if</span> (is_home()) &#123; $title=get_bloginfo(<span class="string">'name'</span>);&#125;</div><div class="line">	<span class="keyword">else</span>&#123;$title=wp_title(<span class="string">''</span>,<span class="keyword">false</span>).<span class="string">' —— 前小端'</span>;&#125;</div><div class="line"><span class="meta">?&gt;</span></div><div class="line">&lt;title&gt;<span class="meta">&lt;?php</span> <span class="keyword">echo</span> $title <span class="meta">?&gt;</span>&lt;/title&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="标题判断函数"><a href="#标题判断函数" class="headerlink" title="标题判断函数"></a>标题判断函数</h3><p>is_home()<br>wp_title() 页面标题<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">if</span> (function_exists(<span class="string">'is_tag'</span>) &amp;&amp; is_tag()) &#123;</div><div class="line">single_tag_title(<span class="string">'Tag Archive for "'</span>); <span class="keyword">echo</span> <span class="string">'" - '</span>;</div><div class="line">&#125; <span class="keyword">elseif</span> (is_archive()) &#123;</div><div class="line">wp_title(<span class="string">''</span>); <span class="keyword">echo</span> <span class="string">' - '</span>;</div><div class="line">&#125; <span class="keyword">elseif</span> (is_search()) &#123;</div><div class="line"><span class="keyword">echo</span> <span class="string">'Search for "'</span>.wp_specialchars($s).<span class="string">'" - '</span>;</div><div class="line">&#125; <span class="keyword">elseif</span> (!(is_404()) &amp;&amp; (is_single()) || (is_page())) &#123;</div><div class="line">wp_title(<span class="string">''</span>); <span class="keyword">echo</span> <span class="string">' - '</span>;</div><div class="line">&#125; <span class="keyword">elseif</span> (is_404()) &#123;</div><div class="line"><span class="keyword">echo</span> <span class="string">'Not Found - '</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span> (is_home()) &#123;</div><div class="line">bloginfo(<span class="string">'name'</span>); <span class="keyword">echo</span> <span class="string">' - '</span>; bloginfo(<span class="string">'description'</span>);</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">bloginfo(<span class="string">'name'</span>);</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span> ($paged &gt; <span class="number">1</span>) &#123;</div><div class="line"><span class="keyword">echo</span> <span class="string">' - page '</span>. $paged;</div><div class="line">&#125; <span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
 <p> 全局变量-分页<br>$paged<br>以下函数为相应模板调用资源<br>is_category()<br>is_search()<br>is_404()<br>is_single()<br>is_page()</p>
 <h3 id="面包屑导航"><a href="#面包屑导航" class="headerlink" title="面包屑导航"></a>面包屑导航</h3><p>single_cat_title() 输出当前分类标题<br>$s 搜索词<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span> <span class="keyword">if</span>(!is_home())&#123;<span class="meta">?&gt;</span></div><div class="line">	&lt;a href=<span class="string">"&lt;?php bloginfo('url'); ?&gt;"</span>&gt;首页&lt;/a&gt; </div><div class="line"><span class="meta">&lt;?php</span> </div><div class="line">	<span class="keyword">if</span> (is_category()) &#123;single_cat_title();&#125; </div><div class="line">	<span class="keyword">elseif</span>(is_search()) &#123;$s;&#125;</div><div class="line">	<span class="keyword">elseif</span>(is_single())&#123;</div><div class="line">		$cat=get_the_category();</div><div class="line">		$cat=$cat[<span class="number">0</span>];</div><div class="line">		<span class="keyword">echo</span> <span class="string">'&lt;a href="'</span> .get_category_link($cat).<span class="string">'"&gt;'</span> . $cat-&gt;name . <span class="string">'&lt;/a&gt;'</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">elseif</span>(is_page()) &#123;the_title();&#125;</div><div class="line">	<span class="keyword">elseif</span>(is_404()) &#123;<span class="keyword">echo</span> <span class="string">"404ye"</span>;&#125;</div><div class="line"><span class="meta">?&gt;</span></div><div class="line"><span class="meta">&lt;?php</span> &#125; <span class="meta">?&gt;</span></div></pre></td></tr></table></figure></p>
 <h3 id="自定义面包屑导航"><a href="#自定义面包屑导航" class="headerlink" title="自定义面包屑导航"></a>自定义面包屑导航</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//面包屑导航</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">mbx</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">if</span>(!is_home())&#123; <span class="meta">?&gt;</span></div><div class="line">		&lt;a href=<span class="string">"&lt;?php bloginfo('url'); ?&gt;"</span>&gt;首页&lt;/a&gt; </div><div class="line">	<span class="meta">&lt;?php</span></div><div class="line">		<span class="keyword">if</span> (is_category()) &#123;single_cat_title();&#125; </div><div class="line">		<span class="keyword">elseif</span>(is_search()) &#123;$s;&#125;</div><div class="line">		<span class="keyword">elseif</span>(is_single())&#123;</div><div class="line">			$cat=get_the_category();</div><div class="line">			$cat=$cat[<span class="number">0</span>];</div><div class="line">			<span class="keyword">echo</span> <span class="string">'&lt;a href="'</span> .get_category_link($cat).<span class="string">'"&gt;'</span> . $cat-&gt;name . <span class="string">'&lt;/a&gt;'</span>;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">elseif</span>(is_page()) &#123;the_title();&#125;</div><div class="line">		<span class="keyword">elseif</span>(is_404()) &#123;<span class="keyword">echo</span> <span class="string">"404ye"</span>;&#125;</div><div class="line">	<span class="meta">?&gt;</span></div><div class="line">	<span class="meta">&lt;?php</span> &#125; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -365,6 +365,15 @@ var _hmt = _hmt || [];
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/07/30/wordpress3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          wordpress常用代码段整理
+        
+      </div>
+    </a>
   
   
     <a href="/2017/05/24/flexbox/" id="article-nav-older" class="article-nav-link-wrap">
@@ -491,7 +500,15 @@ var _hmt = _hmt || [];
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">wordpress</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">sass</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">前端开发</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -507,31 +524,15 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">词云</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">前端开发</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">wordpress</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">词云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">flexbox</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iocnfont</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -540,6 +541,14 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iocnfont</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
